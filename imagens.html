@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="icon" type="image/x-icon" href="/imagens/iconCloud.ico">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <div class="row">
+        <div class="column">
+            <p>Imagem salva no mesmo diretório dos arquivos:</p>
+            <img src="fotoSP.jpg" alt="Foto da Av. Paulista, em São Paulo" style="width:500px;height:600px;">
+        </div> 
+        <div class="column">
+            <p>Imagem salva em um diretório diferente:</p>
+            <img src="/Imagens/fotoRJ.jpg" alt="Foto do Cristo Redentor, no Rio de Janeiro" style="width:500px;height:600px;">
+        </div>
+        <div class="column">
+            <p>Imagem salva em algum servidor na internet (URL):</p>
+            <img src="https://images.pexels.com/photos/5833492/pexels-photo-5833492.jpeg?cs=srgb&dl=pexels-eugenio-barboza-5833492.jpg&fm=jpg" alt="Foto do Museu Nacional, em Brasília"style="width:500px;height:600px;">
+        </div>
+        
+    </div>
+</body>
+</html>
